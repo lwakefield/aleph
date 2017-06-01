@@ -1,0 +1,24 @@
+{
+  "name": "alep",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Lawrence Wakefield <lawrence@iamlawrence.me>",
+  "license": "ISC",
+  "dependencies": {
+    "babel-preset-env": "^1.5.1",
+    "babel-preset-stage-0": "^6.24.1",
+    "preact": "^8.1.0"
+  },
+  "peerDependencies": {
+    "preact": "^8.1.0"
+  },
+  "devDependencies": {
+    "sinon": "^2.3.2",
+    "jest": "^20.0.4",
+    "babel-plugin-rewire": "^1.1.0"
+  }
+}
