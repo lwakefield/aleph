@@ -1,0 +1,42 @@
+html, body {
+	height: 100%;
+	width: 100%;
+	padding: 0;
+	margin: 0;
+	background: #e5e9f0;
+	font-family: 'Helvetica Neue', arial, sans-serif;
+	font-weight: 400;
+	color: #2e3440;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+* {
+	box-sizing: border-box;
+}
+
+#app {
+	height: 100%;
+}
+
+.container {
+	width: 64rem;
+	padding: 1rem 2rem;
+	background: #eceff0;
+	margin: 0 auto;
+}
+
+a {
+	color: inherit;
+}
+
+h1 {
+	margin: 0;
+}
+
+hr {
+	border: none;
+	height: 2px;
+	width: 100%;
+	background: #d8dee9;
+}

@@ -1,0 +1,12 @@
+.listItem {
+	display: flex;
+}
+.itemPosition {
+	width: 2rem;
+}
+.footer {
+	padding: 1rem 0;
+}
+.disabled {
+	color: #999;
+}
