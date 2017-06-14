@@ -1,7 +1,7 @@
 import {h} from 'preact'
 import {spy, mock, stub} from 'sinon'
 
-import Component from './component'
+import Component from '../component'
 
 test('constructor() initializes without data', () => {
 	spy(Component.prototype, '_updateData')

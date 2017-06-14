@@ -1,6 +1,6 @@
 import {spy} from 'sinon'
 
-import {Stores as _Stores} from './stores'
+import {Stores as _Stores} from '../stores'
 
 let Stores = null
 beforeEach(() => {
