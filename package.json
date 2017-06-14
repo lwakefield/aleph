@@ -1,13 +1,21 @@
 {
   "name": "aleph",
   "version": "1.0.0",
-  "description": "",
+  "description": "Simple state management.",
   "main": "src/index.js",
   "scripts": {
-    "test": "jest"
+    "test": "jest",
+    "publish": "sh scripts/publish.sh"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/lwakefield/aleph.git"
   },
   "author": "Lawrence Wakefield <lawrence@iamlawrence.me>",
   "license": "ISC",
+  "jest": {
+    "modulePaths": ["src"]
+  },
   "peerDependencies": {
     "preact": "^8.1.0"
   },
