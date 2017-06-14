@@ -2,7 +2,7 @@ import { h } from 'preact';
 import style from './style';
 import { Link } from 'preact-router/match';
 
-import Component from 'aleph/component'
+import Component from 'zay/component'
 
 import PostListItem from '../../components/post-list-item'
 import { loadTopStories } from '../../actions/items'

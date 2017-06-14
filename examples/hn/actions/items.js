@@ -1,4 +1,4 @@
-import Stores from 'aleph/stores'
+import Stores from 'zay/stores'
 
 export async function loadTopStories() {
 	const existingTop = Stores.get('items/top')

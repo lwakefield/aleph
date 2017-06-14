@@ -1,7 +1,7 @@
 import { h } from 'preact';
 import { Link } from 'preact-router/match';
 
-import Component from 'aleph/component'
+import Component from 'zay/component'
 import { loadItem } from '../../actions/items'
 
 import style from './style'

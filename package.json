@@ -1,5 +1,5 @@
 {
-  "name": "aleph",
+  "name": "zay",
   "version": "1.0.0",
   "description": "Simple state management.",
   "main": "src/index.js",
@@ -9,12 +9,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/lwakefield/aleph.git"
+    "url": "https://github.com/lwakefield/zay.git"
   },
   "author": "Lawrence Wakefield <lawrence@iamlawrence.me>",
   "license": "ISC",
   "jest": {
-    "modulePaths": ["src"]
+    "modulePaths": [
+      "src"
+    ]
   },
   "peerDependencies": {
     "preact": "^8.1.0"

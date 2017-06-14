@@ -7,7 +7,7 @@ import Header from './components/header';
 import Home from './routes/home';
 import Item from './routes/item'
 
-import Stores from 'aleph/stores'
+import Stores from 'zay/stores'
 
 Stores.register('items')
 
