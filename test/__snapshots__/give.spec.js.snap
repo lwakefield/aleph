@@ -1,0 +1,36 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Connector instantiates correctly 1`] = `
+Connector {
+  "__d": true,
+  "__listeners": Map {
+    "bar" => [Function],
+    "qux" => [Function],
+  },
+  "__s": Object {},
+  "context": undefined,
+  "propMap": Object {
+    "baz": "qux",
+    "foo": "bar",
+  },
+  "props": undefined,
+  "state": Object {
+    "baz": undefined,
+    "foo": undefined,
+  },
+}
+`;
+
+exports[`Connector.render renders to document 1`] = `"<p>my foo: this is my foo, mybar: this is my bar</p>"`;
+
+exports[`Connector.render works correctly 1`] = `
+VNode {
+  "attributes": Object {
+    "baz": "qux",
+    "foo": "bar",
+  },
+  "children": Array [],
+  "key": undefined,
+  "nodeName": [Function],
+}
+`;

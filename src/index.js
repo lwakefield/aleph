@@ -1,7 +1,7 @@
-import Component from './component'
 import Stores from './stores'
+import give from './give'
 
 export default {
-	Component,
-	Stores
+	Stores,
+	give
 }

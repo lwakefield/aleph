@@ -1,5 +1,9 @@
 {
     "presets": ["env", "stage-0"],
+    "plugins": [
+        "transform-decorators-legacy",
+        ["transform-react-jsx", { "pragma":"h" }]
+    ],
     "env": {
         "test": {
             "plugins": ["rewire"]
