@@ -1,11 +1,10 @@
 {
   "name": "zay",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Simple state management.",
   "main": "src/index.js",
   "scripts": {
-    "test": "jest",
-    "publish": "sh scripts/publish.sh"
+    "test": "jest"
   },
   "repository": {
     "type": "git",
