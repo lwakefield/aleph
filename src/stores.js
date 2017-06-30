@@ -68,7 +68,6 @@ export class Stores {
         const currKeys = []
 
         this._emit(storeName)
-        if (keystring === '') return
 
         while (keys.length) {
             currKeys.push(keys.shift())
@@ -76,8 +75,10 @@ export class Stores {
             this._emit(path)
         }
 
-        for (const parentPath of parentPaths) {
-            const listeners = this._listeners.get(path)
+        for (const key of this._listeners.keys()) {
+            if (key.startsWith(path) && key !== path) {
+                this._emit(key)
+            }
         }
     }
 

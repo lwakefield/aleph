@@ -100,8 +100,10 @@ test('emit() calls all relevant listeners', () => {
 	const [
 		fn1,
 		fn2,
-		fn3
+		fn3,
+		fn4
 	] = [
+		spy(),
 		spy(),
 		spy(),
 		spy()
@@ -109,26 +111,13 @@ test('emit() calls all relevant listeners', () => {
 	listeners.set('foo',         new Set([fn1]))
 	listeners.set('foo/bar',     new Set([fn2]))
 	listeners.set('foo/bar.baz', new Set([fn3]))
+	listeners.set('qux/bar.baz', new Set([fn4]))
 
 	Stores._listeners = listeners
 
 	Stores.emit('foo')
 	expect(fn1.callCount).toEqual(1)
-	expect(fn2.callCount).toEqual(0)
-	expect(fn3.callCount).toEqual(0)
-
-	Stores.emit('foo/')
-	expect(fn1.callCount).toEqual(2)
-	expect(fn2.callCount).toEqual(0)
-	expect(fn3.callCount).toEqual(0)
-
-	Stores.emit('foo/bar')
-	expect(fn1.callCount).toEqual(3)
 	expect(fn2.callCount).toEqual(1)
-	expect(fn3.callCount).toEqual(0)
-
-	Stores.emit('foo/bar.baz')
-	expect(fn1.callCount).toEqual(4)
-	expect(fn2.callCount).toEqual(2)
 	expect(fn3.callCount).toEqual(1)
+	expect(fn4.callCount).toEqual(0)
 })
